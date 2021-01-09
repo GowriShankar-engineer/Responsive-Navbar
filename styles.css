@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: whitesmoke;
+    opacity: 0.90;
+}
+nav{
+    display: flex;
+    background-color: #0077B5;
+    color: white;
+    justify-content: space-between;
+    font-family: montserrat;
+    align-items: center;
+    position: relative;
+}
+.nav-links{
+    height: 100%;
+    margin-right: 1rem;
+}
+.logo{
+    font-size: 1.5rem;
+    margin: 1rem;
+    margin-left: 2rem;
+
+}
+.nav-links ul{
+    padding: 0px;
+    margin:0px;
+    display: flex;
+}
+.nav-links li{
+    list-style: none;
+
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+
+}
+.nav-links ul li:hover{
+    background-color: #0077B5;
+    opacity: 0.95;
+}
+.btn{
+    position: absolute;
+    top:1.35rem;
+    right: 1.5rem;
+    width: 25px;
+    height: 17px; 
+    display: none;
+    flex-direction: column;     
+    justify-content: space-between; 
+    align-items: center;
+
+ }
+ .btn .box{
+     height: 3px;
+     width: 100%;
+     background-color: white;
+     border-radius: 10px;
+ }
+
+ @media (max-width:400px){
+     .btn{
+         display: flex;
+     }
+     .nav-links{
+         display: none;
+         width: 100%;
+     }
+     img{
+        width: 150px;
+        height: 150px;
+        position: fixed;
+    }
+     .nav-links ul li:hover{
+        background-color: white;
+        opacity: 0.95;
+    }
+     .nav{
+         flex-direction: column;
+         align-items: flex-start;
+     }
+     .nav-links ul{
+         flex-direction: column;
+         width: 100%;
+         background-color: white;
+     }
+     .nav-links li{
+         text-align: center;
+
+     }
+     .nav-links li a{
+         padding: .75rem 1rem;
+         color: #0077B5;
+         font-weight: bold;
+     }
+     .nav-links.active{
+         display: flex;
+     }
+ }
+ .content{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+     
+ }
+
+img{
+    width: 270px;
+    height: 270px;
+    position: fixed;
+}
